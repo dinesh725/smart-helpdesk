@@ -1,0 +1,48 @@
+# version: '3.8'
+
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: modern-helpdesk-server
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=mongodb+srv://dineshkhatua61:dinesh%4096922@cluster0.lympreu.mongodb.net/MODERN-HELP-DESK?retryWrites=true&w=majority
+      - JWT_SECRET=your-super-secret-jwt-key-change-this-in-production-2024-helpdesk-secure
+      - AUTO_CLOSE_ENABLED=true
+      - CONFIDENCE_THRESHOLD=0.78
+      - SLA_HOURS=24
+      - STUB_MODE=true
+      - CLIENT_URL=http://localhost:5173
+      - OPENAI_API_KEY=demo-key-sk-1234567890abcdef
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+    networks:
+      - helpdesk-network
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: modern-helpdesk-client
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8080/api
+    depends_on:
+      - server
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+    networks:
+      - helpdesk-network
+
+networks:
+  helpdesk-network:
+    driver: bridge
