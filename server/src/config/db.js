@@ -1,20 +1,29 @@
 const mongoose = require("mongoose")
 const logger = require("./logger")
 
+console.log("[debug] Full environment keys available:", Object.keys(process.env))
+console.log("[debug] Raw MONGO_URI value:", process.env.MONGO_URI)
+
 const connectDB = async () => {
   try {
     console.log("[v0] Attempting to connect to MongoDB...")
+
+    // Decode first
+    const uri = decodeURIComponent(process.env.MONGO_URI)
+
     console.log("[v0] MONGO_URI exists:", !!process.env.MONGO_URI)
     console.log(
       "[v0] MONGO_URI preview:",
-      process.env.MONGO_URI ? process.env.MONGO_URI.substring(0, 20) + "..." : "Not set",
+      process.env.MONGO_URI ? process.env.MONGO_URI.substring(0, 20) + "..." : "Not set"
     )
+    console.log("[v0] Decoded URI preview:", uri.substring(0, 20) + "...")
 
-    const conn = await mongoose.connect(process.env.MONGO_URI, {
+    // Use decoded URI here
+    const conn = await mongoose.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      serverSelectionTimeoutMS: 5000, // Timeout after 5s instead of 30s
-      socketTimeoutMS: 45000, // Close sockets after 45s of inactivity
+      serverSelectionTimeoutMS: 5000,
+      socketTimeoutMS: 45000,
     })
 
     console.log("[v0] MongoDB connection successful!")
