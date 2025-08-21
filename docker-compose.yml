@@ -1,4 +1,4 @@
-# version: '3.8'
+version: '3.8'
 
 services:
   server:
@@ -9,16 +9,8 @@ services:
     restart: unless-stopped
     ports:
       - "8080:8080"
-    environment:
-      - NODE_ENV=production
-      - MONGO_URI=your-super-mongo-db-url
-      - JWT_SECRET=your-super-secret-jwt-key-change-this-in-production-2024-helpdesk-secure
-      - AUTO_CLOSE_ENABLED=true
-      - CONFIDENCE_THRESHOLD=0.78
-      - SLA_HOURS=24
-      - STUB_MODE=true
-      - CLIENT_URL=http://localhost:5173
-      - OPENAI_API_KEY=demo-key-sk-1234567890abcdef
+    env_file:
+      - .env
     volumes:
       - ./server:/app
       - /app/node_modules

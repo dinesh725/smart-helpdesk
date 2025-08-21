@@ -1,1 +1,20 @@
+# Node
+node_modules/
+
+# Env files
 .env
+*.env.local
+*.env.*.local
+
+# Logs
+server/logs/
+
+# React/Vite build
+client/dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional local Docker overrides
+docker-compose.override.yml
