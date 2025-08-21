@@ -1,18 +1,18 @@
 {
-  "name": "smart-helpdesk",
+  "name": "smart-helpdesk-mern",
   "version": "1.0.0",
-  "description": "Smart Helpdesk with Agentic Triage System",
-  "main": "index.js",
+  "description": "Smart Helpdesk with Agentic Triage System - MERN Stack",
   "scripts": {
-    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
-    "server:dev": "cd server && npm run dev",
-    "client:dev": "cd client && npm run dev",
-    "build": "cd client && npm run build",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "build-client": "cd client && npm run build",
     "start": "cd server && npm start",
-    "test": "cd server && npm test && cd ../client && npm test",
-    "seed": "cd server && node scripts/seed.js"
+    "dev-server": "cd server && npm run dev",
+    "dev-client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed"
   },
-  "devDependencies": {
-    "concurrently": "^8.2.2"
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

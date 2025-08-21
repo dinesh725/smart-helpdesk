@@ -77,6 +77,15 @@ app.get("/readyz", (req, res) => {
   res.status(200).json({ status: "Ready", timestamp: new Date().toISOString() })
 })
 
+app.get("/api/health", (req, res) => {
+  res.status(200).json({
+    status: "healthy",
+    timestamp: new Date().toISOString(),
+    service: "Smart Helpdesk API",
+    database: mongoose.connection.readyState === 1 ? "connected" : "disconnected",
+  })
+})
+
 // API routes
 app.use("/api/auth", authRoutes)
 app.use("/api/kb", kbRoutes)

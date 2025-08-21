@@ -417,3 +417,31 @@
 {"level":"info","message":"::ffff:172.19.0.1 - - [20/Aug/2025:18:58:17 +0000] \"GET /api/tickets? HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","service":"smart-helpdesk","timestamp":"2025-08-20T18:58:17.474Z"}
 {"level":"warn","message":"MongoDB disconnected","service":"smart-helpdesk","timestamp":"2025-08-20T19:03:52.404Z"}
 {"level":"info","message":"MongoDB reconnected","service":"smart-helpdesk","timestamp":"2025-08-20T19:04:02.945Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"smart-helpdesk","timestamp":"2025-08-20T20:45:34.558Z"}
+{"level":"info","message":"MongoDB reconnected","service":"smart-helpdesk","timestamp":"2025-08-20T20:46:15.631Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"smart-helpdesk","timestamp":"2025-08-20T20:56:04.862Z"}
+{"level":"info","message":"MongoDB reconnected","service":"smart-helpdesk","timestamp":"2025-08-20T20:56:37.879Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"smart-helpdesk","timestamp":"2025-08-20T21:04:57.580Z"}
+{"level":"info","message":"MongoDB reconnected","service":"smart-helpdesk","timestamp":"2025-08-20T21:05:07.832Z"}
+{"level":"info","message":"Server running on port 8080","service":"smart-helpdesk","timestamp":"2025-08-21T06:24:39.818Z"}
+{"level":"info","message":"Environment: production","service":"smart-helpdesk","timestamp":"2025-08-21T06:24:39.825Z"}
+{"level":"info","message":"Stub Mode: enabled","service":"smart-helpdesk","timestamp":"2025-08-21T06:24:39.826Z"}
+{"level":"info","message":"MongoDB Connected: ac-zqytmnd-shard-00-02.lympreu.mongodb.net","service":"smart-helpdesk","timestamp":"2025-08-21T06:24:40.510Z"}
+{"level":"info","message":"Database Name: MODERN-HELP-DESK","service":"smart-helpdesk","timestamp":"2025-08-21T06:24:40.510Z"}
+{"level":"info","message":"SIGTERM received. Shutting down gracefully...","service":"smart-helpdesk","timestamp":"2025-08-21T06:26:31.504Z"}
+{"level":"info","message":"Process terminated","service":"smart-helpdesk","timestamp":"2025-08-21T06:26:31.509Z"}
+{"level":"info","message":"Server running on port 8080","service":"smart-helpdesk","timestamp":"2025-08-21T06:26:46.104Z"}
+{"level":"info","message":"Environment: production","service":"smart-helpdesk","timestamp":"2025-08-21T06:26:46.107Z"}
+{"level":"info","message":"Stub Mode: enabled","service":"smart-helpdesk","timestamp":"2025-08-21T06:26:46.108Z"}
+{"level":"info","message":"MongoDB Connected: ac-zqytmnd-shard-00-02.lympreu.mongodb.net","service":"smart-helpdesk","timestamp":"2025-08-21T06:26:46.636Z"}
+{"level":"info","message":"Database Name: MODERN-HELP-DESK","service":"smart-helpdesk","timestamp":"2025-08-21T06:26:46.637Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [21/Aug/2025:06:26:58 +0000] \"GET /api/tickets? HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","service":"smart-helpdesk","timestamp":"2025-08-21T06:26:58.452Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [21/Aug/2025:06:26:58 +0000] \"GET /api/tickets? HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","service":"smart-helpdesk","timestamp":"2025-08-21T06:26:58.516Z"}
+{"level":"info","message":"User registered: rajesh123@gmail.com","service":"smart-helpdesk","timestamp":"2025-08-21T06:27:55.475Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [21/Aug/2025:06:27:55 +0000] \"POST /api/auth/register HTTP/1.1\" 201 302 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","service":"smart-helpdesk","timestamp":"2025-08-21T06:27:55.495Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"smart-helpdesk","timestamp":"2025-08-21T06:27:56.761Z"}
+{"level":"info","message":"MongoDB reconnected","service":"smart-helpdesk","timestamp":"2025-08-21T06:27:57.331Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [21/Aug/2025:06:27:57 +0000] \"GET /api/tickets?my=true HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","service":"smart-helpdesk","timestamp":"2025-08-21T06:27:57.647Z"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [21/Aug/2025:06:28:00 +0000] \"GET /api/tickets?my=true HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","service":"smart-helpdesk","timestamp":"2025-08-21T06:28:00.092Z"}
+{"level":"warn","message":"MongoDB disconnected","service":"smart-helpdesk","timestamp":"2025-08-21T06:28:10.465Z"}
+{"level":"info","message":"MongoDB reconnected","service":"smart-helpdesk","timestamp":"2025-08-21T06:28:20.763Z"}
