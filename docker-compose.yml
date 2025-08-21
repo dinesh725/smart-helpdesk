@@ -11,7 +11,7 @@ services:
       - "8080:8080"
     environment:
       - NODE_ENV=production
-      - MONGO_URI=mongodb+srv://dineshkhatua61:dinesh%4096922@cluster0.lympreu.mongodb.net/MODERN-HELP-DESK?retryWrites=true&w=majority
+      - MONGO_URI=your-super-mongo-db-url
       - JWT_SECRET=your-super-secret-jwt-key-change-this-in-production-2024-helpdesk-secure
       - AUTO_CLOSE_ENABLED=true
       - CONFIDENCE_THRESHOLD=0.78
